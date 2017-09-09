@@ -4,10 +4,10 @@ Hay Herencia múltiple
 
     class A(padre1, padre2):
 
-Hay polimorfismo. 
-No hay interfaces.
-No hay sobrecarga de métodos.
-No hay clases abstractas. Se pueden implementar con librerías.
+Hay polimorfismo. <br />
+No hay interfaces. <br />
+No hay sobrecarga de métodos. <br />
+No hay clases abstractas. Se pueden implementar con librerías.<br />_
 
 Ejemplo de herencia múltiple:
 
@@ -51,7 +51,7 @@ Se puede acceder al método de B, pero como siempre en python con hacks y formas
 
 ### Clase abstracta
 Para implementar una librería abstracta hay que importar y heredar la clase ABC del módulo abc.
-También hay que importar el decorator @abstractmethod para implementar métodos abstractos.
+También hay que importar el decorator @abstractmethod para implementar métodos abstractos.<br />
 
 Ejemplo de implementación y uso de una clase abstracta. Python 3.4+
 

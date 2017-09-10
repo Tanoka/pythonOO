@@ -16,7 +16,7 @@ Podemos cambiar el valor de clase de "contador" y el cambio se verá reflejado e
 
     objeto1 = miclase()
     objeto2 = miclase()
-    **miclase.contador = 3**
+    miclase.contador = 3   <<< CAMBIO DE VALOR DEL ATRIBUTO DE CLASE
     objeto1.getcontador() # retornará 3
     objeto2.getcontador() # retornará 3    
     
@@ -42,9 +42,14 @@ Si el atributo de clase en lugar de ser un tipo inmutable, como un tipo **int**,
     objeto1 = miclase()
     objeto2 = miclase()    
     
-    **objeto1.lista.append(6)**
+    objeto1.lista.append(6) <<< AÑADO UN ELEMENTO A LA LISTA DE CLASE DESDE LA INSTANCIA
     
     print(objeto1.lista) # Muestra [1,2,3,4,6]
     print(objeto2.lista) # Muestra [1,2,3,4,6]
     
 Esto es así porque en Python las variables son punteros a objectos, **lista.append** no cambia la dirección a la que apunta "lista", por lo que todas las instancias sigue viendo la misma lista, pero si hicieramos **lista = [1,2,3,4,6]**, estaríamos cambiando la dirección y pasaría lo mismo que ha pasado anteriormente al cambiar el valor del atributo "contador" en una instancia.
+
+
+    
+    
+    

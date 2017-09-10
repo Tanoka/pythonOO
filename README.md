@@ -6,3 +6,4 @@ Resumen de Python orientado a objectos, enfocado a sintaxis y en general para pr
 [Clase básica](clase_basica.md) <br />
 [Constructor y atributos](constructor_atributos.md) <br />
 [Herencia](herencia.md) <br />
+[Atributos de clase](atributos_clase.md) <br />

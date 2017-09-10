@@ -1,8 +1,8 @@
 ## Constructores y atributos
 
-El constructor de una clase se definen con **\_\_init\_\_()**
-Python tiene muchos métodos especiales del tipo **\_\_<nombre método>\_\_**
-Los atributos de instancia se definen mediante **self.<atributo>**, y se suele hacer en el constructor.
+El constructor de una clase se definen con **\_\_init\_\_()** <br />
+Python tiene muchos métodos especiales del tipo **\_\_<nombre método>\_\_** <br />
+Los atributos de instancia se definen mediante **self.<atributo>**, y se suele hacer en el constructor. <br />
 La visibilidad de los atributos y métodos es pública.
 
     class holamundo:

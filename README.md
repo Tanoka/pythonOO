@@ -4,4 +4,5 @@ Resumen de Python orientado a objectos, enfocado a sintaxis y en general para pr
 
 ### Indice:
 [Clase básica](clase_basica.md) <br />
-[Herencia](herencia.md)
+[Constructor y atributos](constructor_atributos.md) <br />
+[Herencia](herencia.md) <br />

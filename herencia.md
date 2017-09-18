@@ -1,11 +1,11 @@
 ## Herencia
 
-Hay Herencia múltiple
+Python tiene herencia múltiple. Forma de declararla:
 
     class A(padre1, padre2):
 
-Hay polimorfismo. <br />
-No hay interfaces. <br />
+Además del polimorfismo proporcionado por la herencia, en Python cualquier clase pude tener un comportamiento polimórfico gracias al duck typing. <br />
+No tiene interfaces. <br />
 No hay sobrecarga de métodos. <br />
 No hay clases abstractas. Se pueden implementar con librerías.<br />_
 
@@ -45,12 +45,14 @@ utilizar __super()__,
             return super().metrepe()
 
 Que pasa si un método está tanto en la clase A como la clase B, pues que siempre cogerá el de 
-la clase A porque será el primero que encuentre. 
+la clase A porque será el primero que encuentre, tanto si lo llamamos con **super().** como con **self.**. 
 https://makina-corpus.com/blog/metier/2014/python-tutorial-understanding-python-mro-class-search-path
-Se puede acceder al método de B, pero como siempre en python con hacks y formas extrañas....
+Para acceder el método en la clase B podríamos llamar a B.metodocomun(self), hay que pasar explicitamente **self.**
+pues no estamos llamando a la misma instancia, sino al objecto clase. Parece que si le pasaramos el objecto a 
+un método estático.
 
 ### Clase abstracta
-Para implementar una librería abstracta hay que importar y heredar la clase ABC del módulo abc.
+Para implementar una clase abstracta hay que importar y heredar la libreria ABC del módulo abc.
 También hay que importar el decorator @abstractmethod para implementar métodos abstractos.<br />
 
 Ejemplo de implementación y uso de una clase abstracta. Python 3.4+
@@ -72,13 +74,6 @@ Ejemplo de implementación y uso de una clase abstracta. Python 3.4+
         def metodoabs(self):
             print("método abstracto implementado")
 
-### Teoría
-Toda clase hereda en última instancia y de forma implícita de la clase genérica 'object'.
-Las clase 'object' tiene los métodos: \_\_new\_\_(), \_\_init\_\_()_, \_\_eq\_\_(), etc..
-Al instanciar una clase primero se crea un objeto vacio con el método \_\_new\_\_() de la 
-clase 'object' de la que hereda la clase a instanciar, después se llama a \_\_init\_\_()
-para inicializar el nuevo objecto recien creado. De estos dos métodos \_\_init\_\_() es el
-único que se suele sobreescribir.
 
 
 

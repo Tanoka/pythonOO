@@ -1,7 +1,7 @@
 ## Atributos de clase
 Vienen a ser como las variables estáticas de clase. <br />
 Los atributos de clase se declaran fuera de los métodos.  En el cuerpo de la clase.<br />
-Para acceder desde un método a un atributo de clase se utiliza **<nombre clase>.<nombre atributo>**
+Para acceder desde un método a un atributo de clase se utiliza **< nombre clase >.< nombre atributo >**
 
     class miclase
         contador = 1
@@ -20,7 +20,7 @@ Podemos cambiar el valor de clase de "contador" y el cambio se verá reflejado e
     objeto1.getcontador() # retornará 3
     objeto2.getcontador() # retornará 3    
     
-El método "getSelfContador", que accede con "self.", también ve reflejado el cambio:
+El método "getSelfContador", que accede con **self.**, también ve reflejado el cambio:
     
     objeto1.getSelfContador() # retornará 3
     objeto2.getSelfContador() # retornará 3 
@@ -36,7 +36,7 @@ Pero si modificamos el valor de "self.contador" en una instancia, "self.contador
 Si el atributo de clase en lugar de ser un tipo inmutable, como un tipo **int**, es un tipo mutable, como un tipo **list**, se podría modificar la variable de clase desde una instancia y que el cambio se propagara al resto de instancias.
 
     class miclase
-        **lista = [1,2,3,4]**
+        lista = [1,2,3,4]
         ....
         
     objeto1 = miclase()

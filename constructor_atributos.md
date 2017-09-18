@@ -28,4 +28,10 @@ Podemos cambiar el valor del atributo desde un método o directamente accediendo
     instancia.cambia('Marte')
     instancia.atributo = 'Marte'
 
-
+### Teoría
+Toda clase hereda en última instancia y de forma implícita de la clase genérica 'object'.
+Las clase 'object' tiene los métodos: \_\_new\_\_(), \_\_init\_\_()_, \_\_eq\_\_(), etc..
+Al instanciar una clase primero se crea un objeto vacio con el método \_\_new\_\_() de la
+clase 'object' de la que hereda la clase a instanciar, después se llama a \_\_init\_\_()
+para inicializar el nuevo objecto recien creado. De estos dos métodos \_\_init\_\_() es el
+único que se suele sobreescribir.
